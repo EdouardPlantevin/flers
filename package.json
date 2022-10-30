@@ -24,6 +24,10 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
+    "engines": {
+        "node": "v16.13.*",
+        "npm": "8.1.*"
+    },
     "dependencies": {
         "notyf": "^3.10.0"
     }
