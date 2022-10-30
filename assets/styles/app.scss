@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+
+#register-newsletter {
+    height: 100vh;
+    position: relative;
+    .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px 30px 30px 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+        border: none;
+        h1 {
+            font-size: 22px;
+            color: #4a4a57;
+        }
+        .wrap-btn {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+#edit-customer {
+    height: 100vh;
+    position: relative;
+
+    .wrap-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+
+        .wrap-btn {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+.main-btn {
+    border: 1px solid gray;
+    transition: all .2s ease-out;
+    box-shadow: 0 2px 43px -4px rgb(0 0 0 / 19%);
+}
+.main-btn:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 5%);
+}

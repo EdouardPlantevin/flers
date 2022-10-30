@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Foot - Flers{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <section id="register-newsletter">
+        <div class="card">
+            <h1>Recevoir les nouvelles du F.C. Flers</h1>
+            {{ form_start(form) }}
+                {{ form_row(form.email) }}
+                <div class="wrap-btn">
+                    <button type="submit" class="btn main-btn">S'inscrire</button>
+                </div>
+            {{ form_end(form) }}
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

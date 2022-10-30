@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Foot - Flers{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <section id="register-newsletter">
+        <div class="card">
+            <h1>Entrer votre E-mail pour ne plus recevoir les nouvelles du F.C. Flers</h1>
+
+            <form action="{{ path('home_remove') }}" method="post">
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="wrap-btn">
+                    <button type="submit" class="btn main-btn">Se désabonner</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

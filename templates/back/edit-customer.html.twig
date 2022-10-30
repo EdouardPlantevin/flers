@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Edition{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <section id="edit-customer">
+        <div class="wrap-form">
+            {{ form_start(form) }}
+            <label>E-mail</label>
+            {{ form_widget(form.email) }}
+
+            <div class="wrap-btn">
+                <a href="{{ path('admin_index') }}" class="btn main-btn">Retour</a>
+                <button type="submit" class="btn main-btn">Modifier</button>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
